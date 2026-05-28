@@ -51,9 +51,14 @@
         .product-card:hover { transform: scale(1.03) rotate(0.5deg); border-color: var(--morado-cute); }
         
         .product-img-container { background: linear-gradient(135deg, #fff3f6, #f3e8ff); height: 220px; display: flex; justify-content: center; align-items: center; padding: 15px; position: relative; border-bottom: 2px dashed var(--rosa-pastel); }
-        .product-img-container i.kawaii-icon { font-size: 50px; color: #ff6b8b; animation: float 3s ease-in-out infinite; }
-        .product-img-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-6px); } 100% { transform: translateY(0px); } }
+        
+        /* ¡Aquí es donde colocamos correctamente el estilo para tus fotos reales! */
+        .product-real-img { 
+            max-width: 100%; 
+            max-height: 180px; 
+            object-fit: contain; 
+            border-radius: 12px; 
+        }
 
         .product-info { padding: 18px; text-align: center; }
         .product-category { font-size: 11px; text-transform: uppercase; color: #ba8aff; font-weight: 700; margin-bottom: 6px; }
@@ -84,17 +89,21 @@
         🌈 ENVÍOS A TODA VENEZUELA POR MRW Y ZOOM 💖
     </div>
 
-<header>
+    <header>
         <a href="index.html" class="logo">SKIN AND SOUL</a>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="maquillaje.html">Maquillaje</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="maquillaje.html" class="active">Maquillaje</a></li>
                 <li><a href="#" onclick="alert('¡Próximamente Skincare! 🌸')">Skincare</a></li>
                 <li><a href="#" onclick="alert('¡Próximamente Papelería! 🌟')">Papelería Cute</a></li>
                 <li><a href="index.html#experiencias">Área Sorpresa ✨</a></li>
             </ul>
         </nav>
+        <div class="header-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-basket"></i>
+        </div>
     </header>
 
     <div class="container">
@@ -106,31 +115,33 @@
         
         <div class="product-grid">
             
+            <!-- Producto 1 -->
             <div class="product-card">
                 <div class="product-img-container">
-                    <i class="fas fa-heart kawaii-icon"></i>
+                    <img src="lit-gloss.png" alt="Labial Lit Gloss" class="product-real-img">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Labios</div>
-                    <div class="product-title">Colorete en Barra Textura Gelatina (Tono Viral)</div>
+                    <div class="product-title">Labial Lit Gloss (Líquido Bálsamo Vegano)</div>
                     <div class="product-price">Bs. 50</div>
-                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Colorete%20en%20Barra%20Textura%20Gelatina%20💄" class="btn-action" target="_blank">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Labial%20Lit%20Gloss%20💄" class="btn-action" target="_blank">Pedir por WhatsApp</a>
                 </div>
             </div>
 
+            <!-- Producto 2 -->
             <div class="product-card">
                 <div class="product-img-container">
-                    <i class="fas fa-sparkles kawaii-icon"></i>
+                    <img src="rubor.png" alt="Rubor" class="product-real-img">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Rostro</div>
-                    <div class="product-title">Colorete Líquido Ddonna Glam High Radiance</div>
+                    <div class="product-title">Rubor en polvo de alta pigmentación OEM</div>
                     <div class="product-price">Bs. 70</div>
-                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Colorete%20Líquido%20Ddonna%20✨" class="btn-action" target="_blank">Pedir por WhatsApp</a>
+                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Rubor%20en%20polvo%20✨" class="btn-action" target="_blank">Pedir por WhatsApp</a>
                 </div>
             </div>
 
-            </div>
+        </div>
     </div>
 
     <footer>
