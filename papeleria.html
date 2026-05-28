@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería Cute | SKIN AND SOUL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --arcoiris-gradiente: linear-gradient(45deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e8baff);
+            --rosa-brillante: #ff007f;
+            --rosa-pastel: #ffe5ec;
+            --morado-cute: #d6b4fc;
+            --texto-oscuro: #4a4a4a;
+            --blanco: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif; }
+        body { background-image: url('fondo.png'); background-repeat: repeat; background-size: 320px; background-attachment: fixed; color: var(--texto-oscuro); }
+        .top-bar { background: var(--arcoiris-gradiente); color: #614184; text-align: center; padding: 9px 10px; font-size: 13px; font-weight: 700; text-shadow: 1px 1px 0px rgba(255,255,255,0.7); border-bottom: 2px solid rgba(255,255,255,0.4); }
+        header { background-color: rgba(255, 255, 255, 0.93); border-bottom: 4px solid var(--rosa-pastel); position: sticky; top: 0; z-index: 1000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 15px rgba(120,80,150,0.08); backdrop-filter: blur(4px); }
+        .logo { font-family: 'Fredoka One', cursive; font-size: 26px; text-decoration: none; background: linear-gradient(to right, #ff7597, #feca57, #48dbfb, #b983ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 2px 2px 0px rgba(255,255,255,0.5); }
+        nav ul { display: flex; list-style: none; gap: 22px; }
+        nav ul li a { color: var(--texto-oscuro); text-decoration: none; font-size: 14px; font-weight: 700; transition: color 0.3s; }
+        nav ul li a:hover, nav ul li a.active { color: var(--rosa-brillante); }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { text-align: center; font-family: 'Fredoka One', cursive; font-size: 28px; margin-bottom: 10px; color: #444; text-shadow: 3px 3px 0px #fff; }
+        .section-subtitle { text-align: center; font-size: 15px; color: #777; margin-bottom: 40px; font-weight: 700; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 260px)); gap: 25px; justify-content: center; }
+        .product-card { background-color: rgba(255, 255, 255, 0.96); border-radius: 24px; border: 3px solid var(--rosa-pastel); overflow: hidden; padding: 15px; text-align: center; }
+        .product-real-img { max-width: 100%; max-height: 180px; object-fit: contain; border-radius: 12px; }
+        .product-title { font-size: 14px; font-weight: 700; margin: 10px 0; color: #333; }
+        .product-price { font-size: 20px; font-weight: 700; color: var(--rosa-brillante); font-family: 'Fredoka One', cursive; margin-bottom: 10px; }
+        .btn-action { display: inline-block; width: 100%; background: linear-gradient(135deg, #ff007f, #ff4fa8); color: white; padding: 10px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 13px; }
+        .btn-regresar { display: inline-block; background-color: #fff; color: #666; border: 2px solid var(--rosa-pastel); padding: 10px 25px; font-weight: 700; font-size: 14px; text-decoration: none; border-radius: 50px; margin-bottom: 30px; }
+        footer { text-align: center; padding: 40px; color: #999; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="top-bar">🌈 ENVÍOS A TODA VENEZUELA POR MRW Y ZOOM 💖</div>
+    <header>
+        <a href="index.html" class="logo">SKIN AND SOUL</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="maquillaje.html">Maquillaje</a></li>
+                <li><a href="skincare.html">Skincare</a></li>
+                <li><a href="papeleria.html" class="active">Papelería Cute</a></li>
+                <li><a href="index.html#experiencias">Área Sorpresa ✨</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="btn-regresar"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
+        <h2 class="section-title">Papelería Kawaii</h2>
+        <p class="section-subtitle">Stickers, planners y cositas lindas para tu escritorio ✨</p>
+        
+        <div class="product-grid">
+            <!-- Aquí agregas tus productos de papelería más adelante -->
+        </div>
+    </div>
+    <footer>Copyright &copy; 2026 Skin and Soul.</footer>
+</body>
+</html>
