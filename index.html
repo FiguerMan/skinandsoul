@@ -310,10 +310,11 @@
         }
 
         /* Iconos de Reemplazo Animados */
-        .product-img-container i.kawaii-icon {
-            font-size: 50px;
-            color: #ff6b8b;
-            animation: float 3s ease-in-out infinite;
+        .product-real-img { 
+            max-width: 100%; 
+            max-height: 180px; 
+            object-fit: contain; 
+            border-radius: 12px; 
         }
 
         @keyframes float {
@@ -529,7 +530,7 @@
             
             <div class="product-card">
                 <div class="product-img-container">
-                    <i class="fas fa-heart kawaii-icon"></i>
+                    <img src="madre-hija.png" alt="Madre e hija" class="product-real-img">
                 </div>
                 <div class="product-info">
                     <div class="product-category">¡Labiales, Rubores y más!</div>
@@ -540,7 +541,7 @@
 
             <div class="product-card">
                 <div class="product-img-container">
-                    <i class="fas fa-pump-soap kawaii-icon"></i>
+                    <img src="cuidado-facial.png" alt="Cuidado Facial" class="product-real-img">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Facial</div>
@@ -551,7 +552,7 @@
 
             <div class="product-card">
                 <div class="product-img-container">
-                    <i class="fas fa-star kawaii-icon"></i>
+                    <img src="productos-kawaii.png" alt="Productos Kawaii" class="product-real-img">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Bolígrafos y Cuadernos</div>
