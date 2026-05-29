@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Mantenemos exactamente la misma estética mágica */
         :root {
             --arcoiris-gradiente: linear-gradient(45deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e8baff);
             --rosa-brillante: #ff007f;
@@ -77,25 +76,27 @@
         .product-info { padding: 18px; text-align: center; }
         .product-category { font-size: 11px; text-transform: uppercase; color: #ba8aff; font-weight: 700; margin-bottom: 6px; }
         .product-title { font-size: 14px; font-weight: 700; margin-bottom: 12px; height: 38px; overflow: hidden; line-height: 1.3; color: #333; }
-        .product-price { font-size: 22px; font-weight: 700; color: var(--rosa-brillante); font-family: 'Fredoka One', cursive; }
-	.control-cantidad button {
-    	    background: #ff0066; /* El fucsia brillante que combina con tu web */
-            color: white;
-    	    border: none;
-    	    padding: 5px 12px;
-    	    border-radius: 5px;
-    	    cursor: pointer;
-    	    font-weight: bold;
-    	    font-size: 14px;
-	}
+        .product-price { font-size: 22px; font-weight: 700; color: var(--rosa-brillante); font-family: 'Fredoka One', cursive; margin-bottom: 10px; }
 
-	.control-cantidad input {
-	    border: 1px solid var(--rosa-pastel);
-	    border-radius: 5px;
-	    padding: 3px;
-	    font-weight: bold;
-	    color: #555;
-	}
+        .control-cantidad button {
+            background: #ff0066;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .control-cantidad input {
+            border: 1px solid var(--rosa-pastel);
+            border-radius: 5px;
+            padding: 3px;
+            font-weight: bold;
+            color: #555;
+        }
+
         .btn-action { display: inline-block; width: 100%; background: linear-gradient(135deg, #ff007f, #ff4fa8); color: var(--blanco); border: none; padding: 12px; font-weight: 700; font-size: 13px; cursor: pointer; border-radius: 50px; box-shadow: 0 5px 15px rgba(255, 0, 127, 0.25); text-decoration: none; transition: all 0.2s; }
         .btn-action:hover { background: #ff0066; box-shadow: 0 5px 20px rgba(255, 0, 127, 0.5); transform: scale(1.01); }
 
@@ -137,7 +138,6 @@
     </header>
 
     <div class="container">
-        
         <a href="index.html" class="btn-regresar"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
 
         <h2 class="section-title">Ritual de Skincare</h2>
@@ -145,41 +145,41 @@
         
         <div class="product-grid">
             
-<div class="product-card" data-id="suero-pdrn-01" data-nombre="Suero de Péptido rosa PDRN" data-precio="24.99">
-    <div class="product-img-container">
-        <img src="serum.png" alt="Suero de Péptido rosa PDRN" class="product-real-img">
-    </div>
-    <div class="product-info">
-        <div class="product-category">Sueros</div>
-        <div class="product-title">Suero de péptido rosa PDRN con ADN de salmón (30 ml)</div>
-        <div class="product-price">$ 24.99</div>
-        <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
-            <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
-            <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
-            <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
-        </div>
-        <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
-    </div>
-</div>
+            <div class="product-card" data-id="suero-pdrn-01" data-nombre="Suero de Péptido rosa PDRN" data-precio="24.99">
+                <div class="product-img-container">
+                    <img src="serum.png" alt="Suero de Péptido rosa PDRN" class="product-real-img">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Sueros</div>
+                    <div class="product-title">Suero de péptido rosa PDRN con ADN de salmón (30 ml)</div>
+                    <div class="product-price">$ 24.99</div>
+                    <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
+                        <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
+                        <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
+                        <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
+                </div>
+            </div>
 
-<div class="product-card" data-id="mascarilla-hidra-01" data-nombre="Mascarilla Hidratante de Animalitos" data-precio="5.00">
-    <div class="product-img-container">
-        <img src="mascarilla.png" alt="Mascarilla Hidratante" class="product-real-img">
-    </div>
-    <div class="product-info">
-        <div class="product-category">Mascarillas</div>
-        <div class="product-title">Mascarilla Hidratante de Animalitos Hidrogel</div>
-        <div class="product-price">$ 5.00</div>
-        <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
-            <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
-            <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
-            <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
-        </div>
-        <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
-    </div>
-</div>
+            <div class="product-card" data-id="mascarilla-hidra-01" data-nombre="Mascarilla Hidratante de Animalitos" data-precio="5.00">
+                <div class="product-img-container">
+                    <img src="mascarilla.png" alt="Mascarilla Hidratante" class="product-real-img">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Mascarillas</div>
+                    <div class="product-title">Mascarilla Hidratante de Animalitos Hidrogel</div>
+                    <div class="product-price">$ 5.00</div>
+                    <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
+                        <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
+                        <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
+                        <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
+                    </div>
+                    <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
+                </div>
+            </div>
 
-</div> </div> <footer>
+        </div> </div> <footer>
         <div class="copyright">
             Copyright &copy; 2026 Skin and Soul. All rights reserved.
         </div>
@@ -188,6 +188,7 @@
     <a href="https://wa.me/584243433829?text=¡Hola,%20Skin%20and%20Soul!%20Quiero%20más%20información%20sobre%20una%20Mystery%20Box%20✨" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
     <script src="carrito.js"></script>
 </body>
 </html>
