@@ -79,7 +79,25 @@
         .product-category { font-size: 11px; text-transform: uppercase; color: #ba8aff; font-weight: 700; margin-bottom: 6px; }
         .product-title { font-size: 14px; font-weight: 700; margin-bottom: 12px; height: 38px; overflow: hidden; line-height: 1.3; color: #333; }
         .product-price { font-size: 22px; font-weight: 700; color: var(--rosa-brillante); font-family: 'Fredoka One', cursive; }
+	
+	.control-cantidad button {
+    	    background: #ff0066; /* El fucsia brillante que combina con tu web */
+            color: white;
+    	    border: none;
+    	    padding: 5px 12px;
+    	    border-radius: 5px;
+    	    cursor: pointer;
+    	    font-weight: bold;
+    	    font-size: 14px;
+	}
 
+	.control-cantidad input {
+	    border: 1px solid var(--rosa-pastel);
+	    border-radius: 5px;
+	    padding: 3px;
+	    font-weight: bold;
+	    color: #555;
+	}
         .btn-action { display: inline-block; width: 100%; background: linear-gradient(135deg, #ff007f, #ff4fa8); color: var(--blanco); border: none; padding: 12px; font-weight: 700; font-size: 13px; cursor: pointer; border-radius: 50px; box-shadow: 0 5px 15px rgba(255, 0, 127, 0.25); text-decoration: none; transition: all 0.2s; }
         .btn-action:hover { background: #ff0066; box-shadow: 0 5px 20px rgba(255, 0, 127, 0.5); transform: scale(1.01); }
 
@@ -133,31 +151,38 @@
         <div class="product-grid">
             
             <!-- Producto 1 -->
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="lit-gloss.png" alt="Labial Lit Gloss" class="product-real-img">
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Labios</div>
-                    <div class="product-title">Labial Lit Gloss (Líquido Bálsamo Vegano)</div>
-                    <div class="product-price">$ 50.00</div>
-                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Labial%20Lit%20Gloss%20💄" class="btn-action" target="_blank">Pedir por WhatsApp</a>
-                </div>
+	    <div class="product-card" data-id="lit-gloss-01" data-nombre="Labial Lit Gloss (Liquido Bálsamo Vegano)" data-precio="50.00">
+	        <div class="product-img-container">
+	            <img src="lit-gloss.png" alt="Labial Lit Gloss (Liquido Bálsamo Vegano)" class="product-real-img">
+	        </div>
+	        <div class="product-info">
+        	    <div class="product-category">Labios</div>
+        	    <div class="product-title">Labial Lit Gloss (Liquido Bálsamo Vegano)</div>
+        	    <div class="product-price">$ 50.00</div>
+	            <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
+	        <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
+                <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
             </div>
+            <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
+        </div>
+    </div>
 
             <!-- Producto 2 -->
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="rubor.png" alt="Rubor" class="product-real-img">
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Rostro</div>
-                    <div class="product-title">Rubor en polvo de alta pigmentación OEM</div>
-                    <div class="product-price">$ 70.00</div>
-                    <a href="https://wa.me/584243433829?text=Hola!%20Me%20interesa%20el%20Rubor%20en%20polvo%20✨" class="btn-action" target="_blank">Pedir por WhatsApp</a>
-                </div>
+	    <div class="product-card" data-id="rubor-oem-01" data-nombre="Rubor en polvo de alta pigmentación OEM" data-precio="70.00">
+	        <div class="product-img-container">
+	            <img src="rubor.png" alt="Rubor en polvo de alta pigmentación OEM" class="product-real-img">
+	        </div>
+	        <div class="product-info">
+	            <div class="product-category">Rostro</div>
+	            <div class="product-title">Rubor en polvo de alta pigmentación OEM</div>
+	            <div class="product-price">$ 70.00</div>
+	            <div class="control-cantidad" style="display: flex; justify-content: center; align-items: center; gap: 5px; margin: 10px 0;">
+                <button type="button" class="btn-menos" onclick="cambiarCantidad(this, -1)">-</button>
+                <input type="number" class="input-cantidad" value="1" min="1" readonly style="width: 35px; text-align: center;">
+                <button type="button" class="btn-mas" onclick="cambiarCantidad(this, 1)">+</button>
             </div>
-
+            <button type="button" class="btn-action" onclick="agregarAlCarrito(this)" style="width: 100%; border: none; cursor: pointer;">Añadir al Carrito 🛍️</button>
         </div>
     </div>
 
