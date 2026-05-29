@@ -117,7 +117,9 @@
         </nav>
         <div class="header-icons">
             <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-basket"></i>
+            <a href="#" id="icono-cesta" onclick="abrirCarrito(event)" style="color: inherit; text-decoration: none; position: relative;">
+                <i class="fas fa-shopping-basket"></i> <span id="contador-numero">(0)</span>
+            </a>
         </div>
     </header>
 
@@ -168,6 +170,6 @@
     <a href="https://wa.me/584243433829?text=¡Hola,%20Skin%20and%20Soul!%20Quiero%20más%20información%20sobre%20una%20Mystery%20Box%20✨" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
+    <script src="carrito.js"></script>	
 </body>
 </html>
